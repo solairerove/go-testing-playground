@@ -5,6 +5,9 @@ import (
 	"testing"
 )
 
+// go test -cover
+// go test -coverprofile c.out
+// go tool cover -html=c.out
 func TestGreet(t *testing.T) {
 	s := Greet("Tyler Durden")
 	if s != "Hello there Tyler Durden" {
